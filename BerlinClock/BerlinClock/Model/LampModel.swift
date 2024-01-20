@@ -1,7 +1,7 @@
 
 import SwiftUI
 
-struct Lamp {
+struct Lamp: Equatable {
   var color: LampColor
   var isOn: Bool
 }

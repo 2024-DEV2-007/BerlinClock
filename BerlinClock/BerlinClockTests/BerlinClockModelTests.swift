@@ -10,4 +10,13 @@ class BerlinClockModelTests: XCTestCase {
     XCTAssertTrue(model.secondsLamps[0].isOn)
     XCTAssertEqual(model.secondsLamps[0].color, .yellow)
   }
+  
+  func testUpdateUppperHoursHoursLamps() {
+    var model = BerlinClockModel()
+    model.updateUppperRowHoursLamps(for: 5)
+    XCTAssertEqual(model.upperHoursLamps, [Lamp(color: .red, isOn: true), Lamp(color: .gray, isOn: false), Lamp(color: .gray, isOn: false), Lamp(color: .gray, isOn: false)])
+    
+    model.updateUppperRowHoursLamps(for: 23)
+    XCTAssertEqual(model.upperHoursLamps, [Lamp(color: .red, isOn: true), Lamp(color: .red, isOn: true), Lamp(color: .red, isOn: true), Lamp(color: .red, isOn: true)])
+  }
 }
