@@ -37,4 +37,20 @@ class BerlinClockModelTests: XCTestCase {
     model.updateLowerRowHoursLamps(for: 16)
     XCTAssertEqual(model.lowerHoursLamps, [Lamp(color: .red, isOn: true), Lamp(color: .gray, isOn: false), Lamp(color: .gray, isOn: false), Lamp(color: .gray, isOn: false)])
   }
+  
+  func testUpdateUpperMinutesLamps() {
+    model.updateUpperMinutesLamps(for: 43)
+    XCTAssertEqual(model.upperMinutesLamps,
+                   [Lamp(color: .yellow, isOn: true),
+                    Lamp(color: .yellow, isOn: true),
+                    Lamp(color: .red, isOn: true), // 3rd red lamp
+                    Lamp(color: .yellow, isOn: true),
+                    Lamp(color: .yellow, isOn: true),
+                    Lamp(color: .red, isOn: true), // 6th red lamp
+                    Lamp(color: .yellow, isOn: true),
+                    Lamp(color: .yellow, isOn: true),
+                    Lamp(color: .gray, isOn: false),// 9th red lamp
+                    Lamp(color: .gray, isOn: false),
+                    Lamp(color: .gray, isOn: false)])
+  }
 }
