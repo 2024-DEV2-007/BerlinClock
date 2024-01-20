@@ -11,6 +11,10 @@ struct BerlinClockModel: Equatable {
 
 extension BerlinClockModel {
     
+  mutating func updateLamps(for time: DateComponents) {
+    updateSecondsLamps(for: time.second ?? 0)
+  }
+  
   mutating func updateSecondsLamps(for seconds: Int) {
     let isOn = seconds % 2 == 0
     let color: LampColor = isOn ? .berlinYellow : .berlinGray
