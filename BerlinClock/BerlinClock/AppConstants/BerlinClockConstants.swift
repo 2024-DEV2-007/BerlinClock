@@ -1,5 +1,5 @@
 
-import Foundation
+import SwiftUI
 
 // Berlin Clock Rows
 struct BerlinClockConstants {
@@ -10,3 +10,9 @@ struct BerlinClockConstants {
   static let lowerRowMinutesLampsCount = 4
 }
 
+// Colors
+extension Color {
+  static let berlinYellow = Color.yellow
+  static let berlinRed = Color.red
+  static let berlinGray = Color.gray
+}

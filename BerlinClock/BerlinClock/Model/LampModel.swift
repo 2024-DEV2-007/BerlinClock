@@ -7,18 +7,18 @@ struct Lamp: Equatable {
 }
 
 enum LampColor {
-  case yellow
-  case red
-  case gray
+  case berlinYellow
+  case berlinRed
+  case berlinGray
   
   var uiColor: Color {
     switch self {
-    case .yellow:
-      return .yellow
-    case .red:
-      return .red
-    case .gray:
-      return .gray
+    case .berlinYellow:
+      return .berlinYellow
+    case .berlinRed:
+      return .berlinRed
+    case .berlinGray:
+      return .berlinGray
     }
   }
 }
