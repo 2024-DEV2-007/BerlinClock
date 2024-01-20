@@ -6,6 +6,7 @@ struct BerlinClockModel {
   
   mutating func updateSecondsLamps(for seconds: Int) {
     let isOn = seconds % 2 == 0
-    secondsLamps = [Lamp(color: .yellow, isOn: isOn)]
+    let color: LampColor = isOn ? .yellow : .gray
+    secondsLamps = [Lamp(color: color, isOn: isOn)]
   }
 }

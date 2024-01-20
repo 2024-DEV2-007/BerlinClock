@@ -8,5 +8,6 @@ class BerlinClockModelTests: XCTestCase {
     var model = BerlinClockModel()
     model.updateSecondsLamps(for: 12)
     XCTAssertTrue(model.secondsLamps[0].isOn)
+    XCTAssertEqual(model.secondsLamps[0].color, .yellow)
   }
 }
