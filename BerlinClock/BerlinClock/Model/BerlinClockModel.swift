@@ -6,6 +6,7 @@ struct BerlinClockModel: Equatable {
   var upperHoursLamps: [Lamp] = Array(repeating: Lamp(color: .berlinGray, isOn: false), count: BerlinClockConstants.upperRowHoursLampsCount)
   var lowerHoursLamps: [Lamp] = Array(repeating: Lamp(color: .berlinGray, isOn: false), count: BerlinClockConstants.lowerRowHoursLampsCount)
   var upperMinutesLamps: [Lamp] = Array(repeating: Lamp(color: .berlinGray, isOn: false), count: BerlinClockConstants.upperRowMinutesLampsCount)
+  var lowerMinutesLamps: [Lamp] = Array(repeating: Lamp(color: .berlinGray, isOn: false), count: BerlinClockConstants.lowerRowMinutesLampsCount)
 }
 
 extension BerlinClockModel {
@@ -35,5 +36,10 @@ extension BerlinClockModel {
     for i in stride(from: 2, to: topMinutes, by: 3) {
       upperMinutesLamps[i] = Lamp(color: .berlinRed, isOn: true)
     }
+  }
+  
+  mutating func updateLowerMinutesLamps(for minutes: Int) {
+    let bottomMinutes = minutes % 5
+    lowerMinutesLamps = Array(repeating: Lamp(color: .berlinYellow, isOn: true), count: bottomMinutes) + Array(repeating: Lamp(color: .berlinGray, isOn: false), count: max(0, 4 - bottomMinutes))
   }
 }
