@@ -14,6 +14,7 @@ extension BerlinClockModel {
   mutating func updateLamps(for time: DateComponents) {
     updateSecondsLamps(for: time.second ?? 0)
     updateUppperRowHoursLamps(for: time.hour ?? 0)
+    updateLowerRowHoursLamps(for: time.hour ?? 0)
   }
   
   mutating func updateSecondsLamps(for seconds: Int) {

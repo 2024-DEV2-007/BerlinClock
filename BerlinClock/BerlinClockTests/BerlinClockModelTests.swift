@@ -75,4 +75,11 @@ class BerlinClockModelTests: XCTestCase {
     
     XCTAssertEqual(model.upperHoursLamps, [Lamp(color: .berlinRed, isOn: true), Lamp(color: .berlinRed, isOn: true), Lamp(color: .berlinRed, isOn: true), Lamp(color: .berlinGray, isOn: false)])
   }
+  
+  func testUpdateLowerHoursLampsWithDateCompontes() {
+    let dateComponents = DateComponents(hour: 16)
+    model.updateLamps(for: dateComponents)
+    
+    XCTAssertEqual(model.lowerHoursLamps, [Lamp(color: .berlinRed, isOn: true), Lamp(color: .berlinGray, isOn: false), Lamp(color: .berlinGray, isOn: false), Lamp(color: .berlinGray, isOn: false)])
+  }
 }
