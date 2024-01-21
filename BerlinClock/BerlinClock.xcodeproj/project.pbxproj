@@ -19,6 +19,7 @@
 		6BF37A692B5BA77200708D78 /* BerlinClockConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF37A682B5BA77200708D78 /* BerlinClockConstants.swift */; };
 		6BF37A6C2B5D117B00708D78 /* BerlinViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF37A6B2B5D117B00708D78 /* BerlinViewModelTest.swift */; };
 		6BF37A6F2B5D11BF00708D78 /* BerlinViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF37A6E2B5D11BF00708D78 /* BerlinViewModel.swift */; };
+		6BF37A712B5D164F00708D78 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF37A702B5D164F00708D78 /* DateHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		6BF37A682B5BA77200708D78 /* BerlinClockConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerlinClockConstants.swift; sourceTree = "<group>"; };
 		6BF37A6B2B5D117B00708D78 /* BerlinViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerlinViewModelTest.swift; sourceTree = "<group>"; };
 		6BF37A6E2B5D11BF00708D78 /* BerlinViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerlinViewModel.swift; sourceTree = "<group>"; };
+		6BF37A702B5D164F00708D78 /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 		6BF37A3D2B5B8E8A00708D78 /* BerlinClock */ = {
 			isa = PBXGroup;
 			children = (
+				6BF37A722B5D165400708D78 /* Helper */,
 				6BF37A6D2B5D11B000708D78 /* ViewModel */,
 				6BF37A672B5BA75400708D78 /* AppConstants */,
 				6BF37A622B5B930100708D78 /* Model */,
@@ -160,6 +163,14 @@
 				6BF37A6E2B5D11BF00708D78 /* BerlinViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6BF37A722B5D165400708D78 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				6BF37A702B5D164F00708D78 /* DateHelper.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BF37A3F2B5B8E8A00708D78 /* AppDelegate.swift in Sources */,
+				6BF37A712B5D164F00708D78 /* DateHelper.swift in Sources */,
 				6BF37A412B5B8E8A00708D78 /* SceneDelegate.swift in Sources */,
 				6BF37A662B5B937D00708D78 /* LampModel.swift in Sources */,
 				6BF37A642B5B930900708D78 /* BerlinClockModel.swift in Sources */,

@@ -15,8 +15,9 @@ class BerlinClockViewModel: ObservableObject {
   }
   
   @objc private func updateClock() {
-    let currentTime = Calendar.current.dateComponents([.hour, .minute, .second], from: Date())
-    berlinClockModel.updateLamps(for: currentTime)
+    let currentTime = DateHelper.getCurrentDate()
+    let components = DateHelper.getComponents(from: currentTime)
+    berlinClockModel.updateLamps(for: components)
   }
   
   deinit {
