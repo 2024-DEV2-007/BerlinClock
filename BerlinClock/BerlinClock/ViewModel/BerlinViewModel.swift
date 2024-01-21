@@ -10,12 +10,16 @@ class BerlinClockViewModel: ObservableObject {
   }
   
   func startClock() {
-    timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { [weak self] _ in
-      let currentTime = Calendar.current.dateComponents([.hour, .minute, .second], from: Date())
-      self?.berlinClockModel.updateLamps(for: currentTime)
-    }
-    
-    // Ensure the timer is running on the main run loop
+    timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateClock), userInfo: nil, repeats: true)
     RunLoop.main.add(timer!, forMode: .common)
+  }
+  
+  @objc private func updateClock() {
+    let currentTime = Calendar.current.dateComponents([.hour, .minute, .second], from: Date())
+    berlinClockModel.updateLamps(for: currentTime)
+  }
+  
+  deinit {
+    timer?.invalidate()
   }
 }
