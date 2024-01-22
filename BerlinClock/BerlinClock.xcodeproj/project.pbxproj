@@ -21,6 +21,7 @@
 		6BF37A6F2B5D11BF00708D78 /* BerlinViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF37A6E2B5D11BF00708D78 /* BerlinViewModel.swift */; };
 		6BF37A712B5D164F00708D78 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF37A702B5D164F00708D78 /* DateHelper.swift */; };
 		6BF37A742B5E1C7F00708D78 /* LampView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF37A732B5E1C7F00708D78 /* LampView.swift */; };
+		6BF37A762B5E1D0800708D78 /* BerlinClockRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF37A752B5E1D0800708D78 /* BerlinClockRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		6BF37A6E2B5D11BF00708D78 /* BerlinViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerlinViewModel.swift; sourceTree = "<group>"; };
 		6BF37A702B5D164F00708D78 /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		6BF37A732B5E1C7F00708D78 /* LampView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LampView.swift; sourceTree = "<group>"; };
+		6BF37A752B5E1D0800708D78 /* BerlinClockRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerlinClockRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 			children = (
 				6BF37A422B5B8E8A00708D78 /* BerlinClockView.swift */,
 				6BF37A732B5E1C7F00708D78 /* LampView.swift */,
+				6BF37A752B5E1D0800708D78 /* BerlinClockRow.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BF37A3F2B5B8E8A00708D78 /* AppDelegate.swift in Sources */,
+				6BF37A762B5E1D0800708D78 /* BerlinClockRow.swift in Sources */,
 				6BF37A712B5D164F00708D78 /* DateHelper.swift in Sources */,
 				6BF37A412B5B8E8A00708D78 /* SceneDelegate.swift in Sources */,
 				6BF37A662B5B937D00708D78 /* LampModel.swift in Sources */,

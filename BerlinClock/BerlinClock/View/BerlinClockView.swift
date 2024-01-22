@@ -11,6 +11,9 @@ struct BerlinClockView: View {
       Text("\(Date())")
       Text("seconds lamp")
       LampView(isOn: viewModel.berlinClockModel.secondsLamps[0].isOn, color: viewModel.berlinClockModel.secondsLamps[0].color.uiColor)
+      
+      Text("Hours lamp")
+      BerlinClockRow(lamps: $viewModel.berlinClockModel.upperHoursLamps)
     }
     .padding()
     .onAppear {
