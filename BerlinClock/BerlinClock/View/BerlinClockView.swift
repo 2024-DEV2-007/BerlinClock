@@ -2,9 +2,21 @@
 import SwiftUI
 
 struct BerlinClockView: View {
-    var body: some View {
-        Text("Berlin, Clock!")
+  @ObservedObject private var viewModel = BerlinClockViewModel()
+  
+  var body: some View {
+    VStack(spacing: 10) {
+      Text("Berlin Clock")
+        .font(.title)
+      Text("\(Date())")
+      Text("seconds lamp")
+      LampView(isOn: viewModel.berlinClockModel.secondsLamps[0].isOn, color: viewModel.berlinClockModel.secondsLamps[0].color.uiColor)
     }
+    .padding()
+    .onAppear {
+      self.viewModel.startClock()
+    }
+  }
 }
 
 struct ContentView_Previews: PreviewProvider {

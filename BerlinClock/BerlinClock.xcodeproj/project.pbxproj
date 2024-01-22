@@ -20,6 +20,7 @@
 		6BF37A6C2B5D117B00708D78 /* BerlinViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF37A6B2B5D117B00708D78 /* BerlinViewModelTest.swift */; };
 		6BF37A6F2B5D11BF00708D78 /* BerlinViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF37A6E2B5D11BF00708D78 /* BerlinViewModel.swift */; };
 		6BF37A712B5D164F00708D78 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF37A702B5D164F00708D78 /* DateHelper.swift */; };
+		6BF37A742B5E1C7F00708D78 /* LampView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF37A732B5E1C7F00708D78 /* LampView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		6BF37A6B2B5D117B00708D78 /* BerlinViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerlinViewModelTest.swift; sourceTree = "<group>"; };
 		6BF37A6E2B5D11BF00708D78 /* BerlinViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerlinViewModel.swift; sourceTree = "<group>"; };
 		6BF37A702B5D164F00708D78 /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		6BF37A732B5E1C7F00708D78 /* LampView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LampView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				6BF37A422B5B8E8A00708D78 /* BerlinClockView.swift */,
+				6BF37A732B5E1C7F00708D78 /* LampView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				6BF37A642B5B930900708D78 /* BerlinClockModel.swift in Sources */,
 				6BF37A692B5BA77200708D78 /* BerlinClockConstants.swift in Sources */,
 				6BF37A6F2B5D11BF00708D78 /* BerlinViewModel.swift in Sources */,
+				6BF37A742B5E1C7F00708D78 /* LampView.swift in Sources */,
 				6BF37A432B5B8E8A00708D78 /* BerlinClockView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
