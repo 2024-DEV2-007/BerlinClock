@@ -3,6 +3,7 @@ import Foundation
 
 class BerlinClockViewModel: ObservableObject {
   @Published var berlinClockModel = BerlinClockModel()
+  @Published var currentTime: String = ""
   private var timer: Timer?
   
   init() {
@@ -18,6 +19,13 @@ class BerlinClockViewModel: ObservableObject {
     let currentTime = DateHelper.getCurrentDate()
     let components = DateHelper.getComponents(from: currentTime)
     berlinClockModel.updateLamps(for: components)
+    updateCurrentTime()
+  }
+  
+  private func updateCurrentTime() {
+    let formatter = DateFormatter()
+    formatter.dateFormat = "HH:mm:ss"
+    currentTime = formatter.string(from: Date())
   }
   
   deinit {
