@@ -16,3 +16,9 @@ extension Color {
   static let berlinRed = Color.red
   static let berlinGray = Color.gray
 }
+
+// Lamp Sizes
+enum LampSize {
+  static let lampWidth: CGFloat = 20
+  static let lampHeight: CGFloat = 20
+}

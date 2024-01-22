@@ -10,7 +10,7 @@ struct BerlinClockView: View {
         .font(.title)
       Text("\(Date())")
       Text("seconds lamp")
-      LampView(isOn: viewModel.berlinClockModel.secondsLamps[0].isOn, color: viewModel.berlinClockModel.secondsLamps[0].color.uiColor)
+      BerlinClockRow(lamps: $viewModel.berlinClockModel.secondsLamps)
       
       Text("Hours lamp")
       BerlinClockRow(lamps: $viewModel.berlinClockModel.upperHoursLamps)
