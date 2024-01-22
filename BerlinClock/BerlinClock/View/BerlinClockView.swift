@@ -16,6 +16,10 @@ struct BerlinClockView: View {
       BerlinClockRow(lamps: $viewModel.berlinClockModel.upperHoursLamps)
       BerlinClockRow(lamps: $viewModel.berlinClockModel.lowerHoursLamps)
       
+      
+      Text("Minutes lamp")
+      BerlinClockRow(lamps: $viewModel.berlinClockModel.upperMinutesLamps)
+      BerlinClockRow(lamps: $viewModel.berlinClockModel.lowerMinutesLamps)
     }
     .padding()
     .onAppear {
