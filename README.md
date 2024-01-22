@@ -35,20 +35,23 @@ The final two rows represent the minutes. The upper row represents 5 minute bloc
 
 ## Example
 
-swift
+## Example
+
+```swift
 import SwiftUI
 
 struct ContentView: View {
-var body: some View {
-BerlinClockView()
-}
+  var body: some View {
+    BerlinClockView()
+  }
 }
 
 struct ContentView_Previews: PreviewProvider {
-static var previews: some View {
-ContentView()
+  static var previews: some View {
+    ContentView()
+  }
 }
-}
+```
 
 ## Dependencies
 SwiftUI
